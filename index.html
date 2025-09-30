@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Ejercicios</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📅 Mi Calendario de Ejercicios</h1>
+        </div>
+
+        <div class="user-section">
+            <label for="userName">Ingresa tu nombre:</label>
+            <input type="text" id="userName" placeholder="Escribe tu nombre aquí...">
+            <button class="save-btn" id="saveNameBtn" style="display: none;">Guardar Nombre</button>
+            <div id="currentUser" class="current-user" style="display: none;">
+                <span id="userNameDisplay"></span>
+                <button class="edit-btn" id="editNameBtn">✏️ Editar</button>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="month-title" id="monthTitle">
+                <button class="nav-btn" id="prevMonth">←</button>
+                <span class="month-display" id="monthDisplay"></span>
+                <button class="nav-btn" id="nextMonth">→</button>
+                <button class="today-btn" id="todayBtn">📅 Hoy</button>
+            </div>
+        </div>
+
+        <div class="calendar" id="calendar"></div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>¿Hiciste ejercicio este día?</h2>
+            <div class="modal-buttons">
+                <button class="btn btn-yes" id="btnYes">✓ Sí</button>
+                <button class="btn btn-no" id="btnNo">✗ No</button>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn btn-cancel" id="btnCancel">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
