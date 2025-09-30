@@ -319,10 +319,9 @@ h1 {
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    .calendar {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        gap: 10px;
+@media (max-width: 968px) {
+    .container {
+        padding: 20px;
     }
 
     h1 {
@@ -330,6 +329,191 @@ h1 {
     }
 
     .month-title {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .month-display {
+        min-width: 200px;
+        font-size: 0.9em;
+    }
+
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .today-btn {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .calendar {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .day-card {
+        padding: 10px;
+        min-height: 90px;
+    }
+
+    .day-number {
+        font-size: 1.6em;
+    }
+
+    .day-time {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    h1 {
         font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .user-section {
+        padding: 15px;
+    }
+
+    .user-section label {
+        font-size: 14px;
+    }
+
+    .user-section input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .current-user {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .edit-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .save-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .month-title {
+        font-size: 1.2em;
+        gap: 8px;
+    }
+
+    .month-display {
+        min-width: 150px;
+        font-size: 0.85em;
+    }
+
+    .nav-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .today-btn {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    .calendar {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 8px;
+    }
+
+    .day-card {
+        padding: 8px;
+        min-height: 75px;
+        border-width: 2px;
+    }
+
+    .day-name {
+        font-size: 0.75em;
+    }
+
+    .day-number {
+        font-size: 1.4em;
+    }
+
+    .day-time {
+        font-size: 0.65em;
+        margin-top: 3px;
+    }
+
+    .modal-content {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .modal-content h2 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    .modal-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .calendar {
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+        gap: 6px;
+    }
+
+    .day-card {
+        padding: 6px;
+        min-height: 65px;
+    }
+
+    .day-name {
+        font-size: 0.7em;
+    }
+
+    .day-number {
+        font-size: 1.2em;
+    }
+
+    .day-time {
+        font-size: 0.6em;
+    }
+
+    .month-display {
+        min-width: 120px;
+        font-size: 0.8em;
+    }
+
+    .nav-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
     }
 }
